@@ -1,19 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto en Proceso</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca · GitHub Tools</title>
+  
+  <!-- Fuentes estilo Notion -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
 
-    <main>
-        <h1>Este proyecto está en proceso 🚀</h1>
-        <p>Vuelve pronto para ver las novedades.</p>
-        <p>Agregaremos los repositorios más usados de pentesting</p>
-    </main>
+  <!-- ===== HEADER ===== -->
+  <div class="header">
+    <div class="header-top">
+      <i class="fa-brands fa-github"></i>
+      <h1>Biblioteca · GitHub Tools</h1>
+    </div>
+    <div class="header-sub">
+      <i class="fa-solid fa-circle"></i>
+      <span>Herramientas y proyectos open source para pentesting</span>
+      <i class="fa-solid fa-circle"></i>
+    </div>
+    <div class="header-stats">
+      <span><i class="fa-regular fa-bookmark"></i> <span id="toolCount">0</span> herramientas</span>
+      <span><i class="fa-regular fa-clock"></i> Actualizado: <span id="updateDate"></span></span>
+      <span><i class="fa-regular fa-folder"></i> Colección personal</span>
+    </div>
+  </div>
 
-    <script src="js/script.js"></script>
+  <!-- ===== GRID PRINCIPAL ===== -->
+  <div class="grid" id="toolGrid">
+    <!-- Las tarjetas se cargan dinámicamente con JavaScript -->
+  </div>
+
+  <!-- ===== SECCIÓN DE INFORMACIÓN EXTRA ===== -->
+  <div class="info-section">
+    <div class="info-block">
+      <h3><i class="fa-regular fa-file-lines"></i> Sobre esta colección</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="label">Propósito</span>
+          <span class="value">Pentesting & OSINT</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Categorías</span>
+          <span class="value">Recon, Exploit, Post-explotación</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Lenguajes</span>
+          <span class="value">Python, Go, Rust, C, Bash</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Plataformas</span>
+          <span class="value">Win, Linux, macOS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <h3><i class="fa-regular fa-link"></i> Recursos</h3>
+      <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+        <a href="#" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; border-bottom: 1px solid var(--border);">
+          <i class="fa-regular fa-gem"></i> Guía de estudio
+        </a>
+        <a href="#" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; border-bottom: 1px solid var(--border);">
+          <i class="fa-regular fa-book"></i> Documentación
+        </a>
+        <a href="#" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; border-bottom: 1px solid var(--border);">
+          <i class="fa-brands fa-discord"></i> Comunidad
+        </a>
+        <a href="#" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0;">
+          <i class="fa-regular fa-heart"></i> Apoyar proyectos
+        </a>
+        <div style="margin-top: 0.5rem; padding: 0.5rem 0.8rem; background: var(--bg); border-radius: var(--radius); font-size: 0.7rem; color: var(--text-secondary); border: 1px solid var(--border);">
+          <i class="fa-regular fa-circle-info"></i> 
+          <span style="font-weight: 500;">Nota:</span> Uso exclusivamente educativo y con autorización explícita.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <hr class="divider">
+  <div class="counter">
+    <i class="fa-brands fa-github"></i> 
+    <span><span id="footerCount">0</span> herramientas · Biblioteca personal para pentesting</span>
+    <i class="fa-brands fa-github"></i>
+  </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 </body>
 </html>
